@@ -1,4 +1,5 @@
 #!/bin/sh
+# Copyright (c) NexusPIPE. Licensed under the GPL License.
 
 # ANSI Escape Code
 ESCAPE='\033';
@@ -18,7 +19,7 @@ success() {
 # handle rules file
 if [[ "$RULES_FILE" != "" ]]; then
   rm -f "$RULES_FILE";
-  echo -e "#!/bin/sh\n# Copyright (c) NexusPIPE. All rights reserved.\n# Generated on $(date)\nset -e\nset -x" >> "$RULES_FILE";
+  echo -e "#!/bin/sh\n# Copyright (c) NexusPIPE. Licensed under the GPL License.\n# Generated on $(date)\nset -e\nset -x" >> "$RULES_FILE";
 fi;
 
 # IPTables Wrapper

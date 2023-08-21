@@ -1,4 +1,5 @@
 #!/bin/sh
+# Copyright (c) NexusPIPE. Licensed under the GPL License.
 
 # exit on error
 set -e
