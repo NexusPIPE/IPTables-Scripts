@@ -88,7 +88,9 @@ specifyPorts() {
 # execute
 if [[ "$RULES_FILE" != "" && "$DRY" != "false" ]]; then >&2 echo -e "${PREFIX}WARN: Running in dry mode. No changes will be applied."; fi
 set -e
-dropRules;
+if [[ "$NO_DROP_RULES" != "true" ]]; then
+  dropRules;
+fi;
 applyIps;
 specifyConntrack;
 specifyAccept;

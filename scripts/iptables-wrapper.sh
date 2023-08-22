@@ -10,6 +10,7 @@ set -x
 # defaults
 export DRY=${DRY:-false}
 export RULES_FILE=${RULES_FILE:-""}
+export NO_DROP_RULES=${NO_DROP_RULES:-false}
 
 # execute stuff
 date=$(date +%Y-%m-%d);
