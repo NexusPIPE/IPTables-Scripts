@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Copyright (c) NexusPIPE. Licensed under the GPL License.
 
 # ANSI Escape Code
