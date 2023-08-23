@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Copyright (c) NexusPIPE. Licensed under the GPL License.
 
 # exit on error
@@ -15,5 +15,6 @@ export NO_DROP_RULES=${NO_DROP_RULES:-false}
 # execute stuff
 date=$(date +%Y-%m-%d);
 curl -o "nexus-${date}.sh" https://docs.nexuspipe.com/apply-rules/iptables.sh;
-sh "nexus-${date}.sh" $@;
+chmod +x nexus-${date}.sh;
+bash "nexus-${date}.sh" $@;
 rm "nexus-${date}.sh";
