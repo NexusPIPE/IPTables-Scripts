@@ -1,7 +1,7 @@
 # IPTables-Scripts
 The scripts referenced on [our documentation page](https://docs.nexuspipe.com/advanced/whitelisting-ips/#iptables-rules) for whitelisting NexusPIPE IPs.
 
-## Documentatiaon
+## Documentation
 
 For more information on how to use these scripts, please see our [documentation page](https://docs.nexuspipe.com/advanced/whitelisting-ips/#iptables-rules).
 
