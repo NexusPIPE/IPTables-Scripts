@@ -64,6 +64,9 @@ applyIps() {
     ipt -A INPUT -s "${ip}" -j ACCEPT
     finish_quiet Add IPTables Rule for "$ip";
   done
+  if [[ "$NO_SET_LOCALHOST" == "" ]]; then
+    ipt -A INPUT -s "127.0.0.1" -j ACCEPT
+  fi;
   finish Whitelist Nexus IPs
 }
 
